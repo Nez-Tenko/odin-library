@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <button id="addBookButton">New Book</button>
+    <table id="myTable">
+      <caption>
+        Table of books
+      </caption>
+      <thead>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Pages</th>
+        <th>Read</th>
+      </thead>
+      <tbody id='myTableBody'>
+        <tr>
+          <td>"The Greatest Book"</td>
+          <td>John Doe</td>
+          <td>10</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>"The Great Book"</td>
+          <td>John Doe's Brother</td>
+          <td>1000</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>"A Good Book"</td>
+          <td>Someone</td>
+          <td>532</td>
+          <td>true</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <dialog id="addBookDialog" display:none>
+      <form id='myForm'>
+        <div id='div-title'>
+          <label for="title" id='label1'>Title:</label>
+          <input type="text" name="title" id="title-input" required>
+        </div>
+
+        <div id='div-author'>
+          <label for="author" id='label1'>Author:</label>
+          <input type="text" name="author" id="author-input" required>
+        </div>
+        
+        <div id='div-pages'>
+          <label for="pages" id='label1'>Pages:</label>
+          <input type="number" name="pages" id="pages-input" min="1" required>
+        </div>
+        
+        <div id='div-read'>
+          <label for="read">Read:</label>
+          <br>
+          <div id='radio-bool'>
+            <div id='true-radio-div'>
+              <input type="radio" name="radio-input" id="radio-true" value='true' required>
+              <label for='true-label' class='myRadio'>True</label>
+            </div>
+           
+            <div id='false-radio-div'>
+              <input type='radio' name='radio-input' id='radio-false' value='false'>
+              <label for='false-label' class='myRadio'>False</label>
+            </div>
+
+          </div>
+        </div>
+      </form>
+      
+      <div id='div-buttons'>
+        <button id='button-close'>Close</button>
+        <button id='button-submit'>Submit</button>
+      </div>
+    </dialog>
+
+    <script src="main.js"></script>
+  </body>
+
+
