@@ -5,6 +5,16 @@ body {
   //margin: 80px;
 }
 
+#addBookButton {
+  align-self:center;
+  margin-bottom: 30px;
+}
+
+#mainDiv {
+  display: flex;
+  flex-direciton:row;
+}
+
 table {
   table-layout: fixed;
   width: 90%;
@@ -14,6 +24,13 @@ table {
   border-top: 1px solid #999999;
   border-bottom: 1px solid #999999;
 
+}
+
+#deleteButtons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+  gap: 20px;
 }
 
 th,

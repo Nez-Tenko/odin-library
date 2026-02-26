@@ -8,37 +8,51 @@
 
   <body>
     <button id="addBookButton">New Book</button>
-    <table id="myTable">
-      <caption>
-        Table of books
-      </caption>
-      <thead>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Pages</th>
-        <th>Read</th>
-      </thead>
-      <tbody id='myTableBody'>
-        <tr>
-          <td>"The Greatest Book"</td>
-          <td>John Doe</td>
-          <td>10</td>
-          <td>true</td>
-        </tr>
-        <tr>
-          <td>"The Great Book"</td>
-          <td>John Doe's Brother</td>
-          <td>1000</td>
-          <td>false</td>
-        </tr>
-        <tr>
-          <td>"A Good Book"</td>
-          <td>Someone</td>
-          <td>532</td>
-          <td>true</td>
-        </tr>
-      </tbody>
-    </table>
+    <div id="mainDiv">
+      <table id="myTable">
+        <caption>
+          Table of books
+        </caption>
+        <thead>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Pages</th>
+          <th>Read</th>
+          <th>Toggle Read</th>
+          <th>Remove Book</th>
+        </thead>
+        <tbody id='myTableBody'>
+          <!--
+          <tr id='testID'> <!--his row is index 1-->
+          <!--
+            <td>"The Greatest Book"</td>
+            <td>John Doe</td>
+            <td>10</td>
+            <td>true</td>
+          </tr>
+          <tr>
+            <td>"The Great Book"</td>
+            <td>John Doe's Brother</td>
+            <td>1000</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>"A Good Book"</td>
+            <td>Someone</td>
+            <td>532</td>
+            <td>true</td>
+          </tr>
+          -->
+        </tbody>
+      </table>
+      
+      <!--
+      <div id="deleteButtons">
+
+      </div>
+      -->
+    </div>
+
 
     <dialog id="addBookDialog" display:none>
       <form id='myForm'>
